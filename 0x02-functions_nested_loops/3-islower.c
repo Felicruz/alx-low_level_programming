@@ -2,10 +2,9 @@
 
 /**
  *_islower - checks if a letter is a lowercase.
- *Return: returns 1 or 0 according to the case
+ *Return: returns zero or one according to the condition.
  */
 int _islower(int c)
 {
 	return (c >= 'a' && c <= 'z');
 }
-
