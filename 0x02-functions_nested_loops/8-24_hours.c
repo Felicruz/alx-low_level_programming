@@ -1,44 +1,31 @@
-#include "main.h"
-/**
- *jack_bauer - this will print the time
+ #include "main.h"
+ /**
+ *jack_bauer - the function that prints minutes of the day
+ * n loop counts min
+ *Return: returns values
  */
 void jack_bauer(void)
 {
+    int h = 0;
+    int min = 0;
+    int h_rem;
+    int min_rem;
 
-	int y, i;
-	for (y = 0; y < 24; i++)
-
-{
-		for (i = 0; i < 60; i++)
-
-		{
-			if (y < 10)
-			{
-				_putchar('0');
-				_putchar(y + '0');
-			}
-			else if (y >= 10)
-			{
-				_putchar ((y / 10) + '0');
-				_putchar((y % 10) + '0');
-
-			}
-			if (i < 10)
-			{
-				_putchar(':');
-				_putchar('0');
-				_putchar(i + '0');
-			}
-			else if (i >= 10)
-			{
-				_putchar(':');
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-
-
-		}
-		_putchar('\n');
-		}
-	}
-
+    while (h <= 23)
+    {
+    while (min <= 59)
+    {
+    min_rem = min % 10;
+    h_rem = h % 10;
+    _putchar(h /10 + '0');
+    _putchar(h_rem + '0');
+    _putchara(':');
+    _putchar(min / 10 + '0');
+    _putchar(min_rem + '0');
+    min++;
+    _putchar('\n');
+    }
+h++;
+min = 0;
+    }
 }
