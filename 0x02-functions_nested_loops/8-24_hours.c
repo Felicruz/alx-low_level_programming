@@ -1,8 +1,8 @@
  #include "main.h"
  /**
- *jack_bauer - the function that prints minutes of the day
- *n loop counts min
- *Return: returns values
+ * jack_bauer - the function that prints minutes of the day
+ * n loop counts min
+ * Return: returns values
  */
 void jack_bauer(void)
 {
