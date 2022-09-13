@@ -1,7 +1,7 @@
  #include "main.h"
  /**
  *jack_bauer - the function that prints minutes of the day
- * n loop counts min
+ *n loop counts min
  *Return: returns values
  */
 void jack_bauer(void)
@@ -16,8 +16,8 @@ void jack_bauer(void)
 	while (min <= 59)
 	{
 	min_rem = min % 10;
- 	h_rem = h % 10;
-	_putchar(h /10 + '0');
+	h_rem = h % 10;
+	_putchar(h / 10 + '0');
 	_putchar(h_rem + '0');
 	_putchar(':');
 	_putchar(min / 10 + '0');
