@@ -2,7 +2,9 @@
 /**
  *jack_bauer - this will print the time
  */
-void jack_bauer(void){
+void jack_bauer(void)
+{
+
 	int y, i;
 	for (y = 0; y < 24; i++)
 
