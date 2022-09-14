@@ -4,7 +4,7 @@
  * n loop counts min and hours.
  * Return: returns values
  */
-void jack_bauer(void);
+void jack_bauer(void)
 {
         int h = 0;
         int min = 0;
