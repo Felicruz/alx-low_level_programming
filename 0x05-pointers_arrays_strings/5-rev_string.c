@@ -5,23 +5,16 @@
 *@n: parameter
 *Return : nothing
 */
-
 void rev_string(char *s)
 {
-	char tmp;
-	int i, length1, length2;
-
-	length1 = 0;
-	length2 = 0;
-
-	while (s[length1] != '\0')
-		length1++;
-
-	length2 = length1 - 1;
-	for (i = 0; i < length1 / 2; i++)
+	int l, i;
+	char ch;
+	
+	for(l = 0; s[l] != '\0'; l++)
+	for (i = 0; i < l /2; i++)
 	{
-	tmp = s[i];
-		s[i] = s[length2] = tmp;
-		length2 -= 1;
-}
+		ch = s [l];
+		s[l] = s[l -1 - i];
+		s[l - 1 - i] = ch;
+	}
 }
