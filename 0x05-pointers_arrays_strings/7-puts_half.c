@@ -1,22 +1,25 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-*reset_to_98 - resets the value of given integer to 98
-*@n: parameter
-*Return : nothing
-*/
+ * puts_half - this function print only the even numbers.
+ * @str: is the principal parameter.
+ */
 void puts_half(char *str)
 {
-	int l, i, n;
-	
-	for ((l =  0); (str[l]); (l= '\0'; i++));
-	
-	if(l % 2 == 0) {
-		for (n= 1 / 2); str[n] != '\0'; n++);
-			_putchar(str[n]);
-		}else{
-			for(n = ((l - 1) / 2) + 1; str[n] != '\0'; n++);
-				_putchar(str[n]);
-			}
-			_putchar('\n');
+	int i, len, m;
+
+	for (len = 0; str[len] != '\0'; len++)
+	{
+	}
+
+	if ((len  % 2) == 0)
+		m = (len / 2);
+	else
+		m = (len + 1) / 2;
+
+	for (i = m; i < len; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
